@@ -1,0 +1,66 @@
+body, html {
+	margin:0;
+	padding:0;
+}
+
+input, textarea {
+	background-color: #1b1b1b;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+select {
+	background-color: #1b1b1b;
+	color: white;
+}
+
+.special_function {
+	width: 800px;
+	height: 130px;
+	resize: none;
+}
+
+.long-input {
+	width:263px;
+	height: 35px;
+}
+
+.short-input {
+	width: 60px;
+	height: 35px;
+	text-align: center;
+}
+
+.short-input-center {
+	text-align: center;
+}
+
+.submit-button {
+	width: 400px;
+	height: 80px;
+	background-color: red;
+	border-radius: 20px;
+}
+
+.submit-button:focus {
+	outline: none;
+}
+
+.submit-button:active {
+	background-color: #c30505;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

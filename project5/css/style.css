@@ -1,0 +1,105 @@
+@import url(fonts.css);
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	color: white;
+	font-style: italic;	
+}
+
+h1 .web_logo_1 {
+	color: red;
+}
+
+h1 .web_logo_2 {
+	color: grey;
+}
+
+h2 {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Pangolin';
+}
+
+li {
+	color: black;
+}
+
+li span {
+	color: white;
+}
+
+p {
+	color: white;
+	font-family: 'Neucha', 'tahoma';
+}
+
+.main_menu_button {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'MarckScript';
+}
+
+.offer_button {
+	color: red;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Pattaya', 'tahoma';	
+}
+
+.vertical_menu_button {
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'MarckScript', 'tahoma';
+}
+
+.portfolio_names {
+	font-style: italic;
+	font-family: 'Pangolin', 'tahoma';
+}
+
+.portfolio_link {
+	color: blue;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.portfolio_description {
+	font-size: 15px;
+	font-family: 'BadScript', 'tahoma';
+}
+
+.footer_menu_button_left {
+	color: red;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Pattaya', 'tahoma';
+}
+
+.footer_menu_button_right {
+	color: rgb(0, 176, 224);
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Pattaya', 'tahoma';	
+}
+
+.phone_number {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.copyright {
+	font-family: 'Kelly Slab', 'tahoma';
+}

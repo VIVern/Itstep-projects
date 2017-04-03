@@ -1,0 +1,39 @@
+/*----------------------------------
+Все подключаемые шрифты. 
+-------------------------------------*/
+
+
+@font-face {
+  font-family: Lobster;
+  src: url(../fonts/Lobster/Lobster-Regular.ttf);
+} 
+
+@font-face {
+  font-family: MarckScript;
+  src: url(../fonts/Marck_Script/MarckScript-Regular.ttf);
+} 
+
+@font-face {
+  font-family: BadScript;
+  src: url(../fonts/Bad_Script/BadScript-Regular.ttf);
+} 
+
+@font-face {
+  font-family: Neucha;
+  src: url(../fonts/Neucha/Neucha.ttf);
+} 
+
+@font-face {
+  font-family: Pangolin;
+  src: url(../fonts/Pangolin/Pangolin-Regular.ttf);
+}
+
+@font-face {
+  font-family: Pattaya;
+  src: url(../fonts/Pattaya/Pattaya-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kelly Slab;
+  src: url(../fonts/Kelly_Slab/KellySlab-Regular.ttf);
+}

@@ -1,10 +1,20 @@
-/* Иван, вы мне 04.04.2017 поставили посещене только одной пары в mystat, хотя я посетил как первую так и вторую.
-*/
-
-
 html,body {
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	background-color: #f8fafb;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h2 {
+	color: #373737;
+	font-size: 14px;
 }
 
 .wraper {
@@ -21,8 +31,7 @@ html,body {
 
 .logo {
 	width: 160px;
-	min-height: 65px;
-	background-color: red;
+	min-height: 99px;
 	float: left;
 }
 
@@ -34,72 +43,226 @@ html,body {
 
 .menuIcons {
 	width: 90px;
-	min-height: 20px;
-	background-color: green;
-	margin: 0 70px 0 0;
+	margin: 10px 70px 0 0;
 	float: right;
 }
 
-.menuText {
-	width:305px;
-	min-height: 30px;
-	background-color: green;
-	margin: 15px 40px 0 25px;
+.menuIcons ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	float: left;
+}
+
+.menuIcons ul li {
+	margin: 0 15px 0 0;
+	list-style: none;
+	float: left;
+}
+
+.menuText {
+	width:315px;
+	min-height: 30px;
+	margin: 20px 30px 0 25px;
+	float: left;
+}
+
+.menuText ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+.menuText ul li {
+	margin: 5px 5px 0 0;
+	padding: 0 5px 0 0;
+	border-right: 1px solid #cbcdce;
+	list-style: none;
+	float: left;
+}
+
+.menuText a {
+	color: black;
+}
+
+.menuText a:hover {
+	color: red;
 }
 
 .contacts {
 	width: 390px;
 	min-height: 65px;
-	background-color: blue;
 	float: right;
+	color: #b6b6b6;
+	font-size: 14px;
+}
+
+.contactsEmail {
+	color: red;
+	text-decoration: underline;
+}
+
+.contacts p {
+	margin: 10px 25px 0 0;
+}
+
+.contactsPhone {
+	font-size: 18px;
+	color: red;
+	float: left;
+}
+
+.contactsText {
+	float:left;
 }
 
 .tech {
 	width: 100%;
-	background-color: yellow;
-	padding: 10px 0 10px 0;
+	min-height: 103px;
+	background:  url(../images/techBg.png);
+	padding: 0px 0 0px 0;
 	float: left;
 }
 
 .techType {
 	width: 95px;
-	min-height: 50px;
-	background-color: red;
-	margin: 0 0 0 20px;
+	margin: 5px 0 0 20px;
 	float: left;
+}
+
+.techType p {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+    font-size: 11px;
+    float: left;
+
 }
 
 .navigation {
 	width: 100%;
 	margin: 10px 0 0 0;
-	background-color: yellow;
+	background: url("../images/navBg.png");
 	float:left;
 }
 
 .navigationButton {
 	width: 227.5px;
-	min-height: 70px;
-	background-color: red;
+	min-height: 61px;
 	margin: 0 0 0 10px;
 	float: left;
 }
 
-.slider{
-	width: 100%;
-	margin: 10px 0 0 0;
-	background-color: green;
-	min-height: 200px;
+/*-----------------------------------Работа изменения цвета фона кнопок и текста ---------------------------------*/
+
+.navigationButton:hover {
+	background: url(../images/buttonActive.png);
+	cursor: pointer;
+}
+
+.navigationButton:hover p {
+	color: white;
+}
+
+.navigationIcon {
+	width: 37px;
+	min-height: 37px;
+	margin: 12px 0 0 75px;
 	float: left;
+
+}
+
+/*-----------------------------------Работа изменения цвета иконок на кнопках ---------------------------------*/
+
+.watchIcon {
+	background: url(../images/watchLogo.png);
+}
+
+.navigationButton:hover .watchIcon {
+	background: url(../images/watchLogoActive.png);
+}
+
+.serviceIcon {
+	background: url("../images/serviceLogo.png");
+}
+
+.navigationButton:hover .serviceIcon {
+	background: url(../images/serviceLogoActive.png);
+}
+
+.toolsIcon {
+	background: url("../images/toolsLogo.png");
+}
+
+.navigationButton:hover .toolsIcon {
+	background: url(../images/toolsLogoActive.png);
+}
+
+.financeIcon {
+	min-height: 41px;
+	background: url("../images/financeLogo.png");
+}
+
+.navigationButton:hover .financeIcon {
+	background: url(../images/financeLogoActive.png);
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.navigationButton .finance {
+	margin: 15px 0 0 10px;
+	float: left;
+}
+
+.navigationButton p {
+	margin: 25px 0 0 10px;
+	float: left;
+}
+
+.slider{
+	width: 920px;
+	margin: 10px 0 0 0;
+	background: url(../images/sliderBg.png);
+	min-height: 203px;
+	float: left;
+}
+
+.slide {
+	width: 100%;
+	min-height: 203px;
+	background: url(../images/slide_1.png) no-repeat 0px 3px;
+	float: left;
+}
+
+.sliderParts {
+	width: 10px;
+	margin: 10px 0 0 0;
+	min-height: 203px;
+	float: left;
+}
+
+.sliderPartLeft {
+	background: url(../images/sliderPartLeftBg.png);
+}
+
+.sliderPartRight {
+	background: url(../images/sliderPartRightBg.png);
 }
 
 .sliderText{
 	width: 210px;
 	min-height: 60px;
-	background-color: blue;
 	margin: 72px 0 0 52px;
 	float: left;
-	z-index: 3;
+}
+
+.sliderText p {
+	display: inline-block;
+	padding: 0 10px 0 5px;
+	margin: 5px 0 0 0;
+	color: white;
+	background: rgba(0,0,0,.4);
 }
 
 .sliderNav {
@@ -119,40 +282,155 @@ html,body {
 }
 
 .sliderNavButton:focus {
-	background-color: pink;
+	background-color: #c53939;
 	outline: none;
 }
 
 .news {
 	width: 210px;
 	min-height: 300px;
-	background-color: blue;
 	margin: 10px 0 0 0;
 	float: left;
+}
+
+.newsContainer{
+	width: 100%;
+	min-height: 100px;
+	float: left;
+}
+
+.newsContainerBorder {
+	border-bottom: 1px dotted #9a9b9c;
+}
+
+.newsDate {
+	color: #8c1a1a;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.newsText {
+	color: #4f4f4f;
+	font-size: 11px;
+}
+
+.newsContainer a {
+	color: #8c1a1a;
+	font-size: 11px;
+	text-decoration: underline;
 }
 
 .mainContent {
 	width: 720px;
 	min-height: 300px;
-	background-color: blue;
 	margin: 10px 0 0 0;
 	float: right;
 }
 
+.mainContent a {
+	text-decoration: underline;
+	color: #8c1a1a;
+}
+
+.mainContent p , span {
+	font-size: 11px;
+	color: #4f4f4f;
+}
+
+.mainContent ul {
+	color: #8c1a1a;
+	font-size: 11px;
+}
+
+.mainContent ul li {
+	margin: 0 0 15px 0;
+}
+
 .friends {
 	width: 100%;
+	min-height: 80px;
 	margin: 20px 0 0 0;
-	background-color: yellow;
+	background: url(../images/friendsBg.png);
 	float: left;
 }
 
 .friendsLogo {
 	width: 110px;
-	min-height: 50px;
+	min-height: 80px;
 	margin: 0 0 0 21px;
-	background-color: red;
 	float: left;
 }
+
+.friendsLogo img {
+	margin: 25px 0 0 0;
+}
+
+/*------------------ Работа логотипов при наведении ----------------------------------*/
+
+.friendsLogo_1 {
+	background: url(../images/friendsLogo_1.png) no-repeat 0px 25px;
+}
+
+.friendsLogo_1:hover {
+	background: url(../images/friendsLogoActive_1.png) no-repeat 0px 25px;
+	cursor: pointer;
+}
+
+.friendsLogo_2 {
+	background: url(../images/friendsLogo_2.png) no-repeat 5px 25px;
+}
+
+.friendsLogo_2:hover {
+	background: url(../images/friendsLogoActive_2.png) no-repeat 5px 25px;
+	cursor: pointer;
+}
+
+.friendsLogo_3 {
+	background: url(../images/friendsLogo_3.png) no-repeat 10px 25px;
+}
+
+.friendsLogo_3:hover {
+	background: url(../images/friendsLogoActive_3.png) no-repeat 10px 25px;
+	cursor: pointer;
+}
+
+.friendsLogo_4 {
+	background: url(../images/friendsLogo_4.png) no-repeat 0px 25px;
+}
+
+.friendsLogo_4:hover {
+	background: url(../images/friendsLogoActive_4.png) no-repeat 0px 25px;
+	cursor: pointer;
+}
+
+.friendsLogo_5 {
+	background: url(../images/friendsLogo_5.png) no-repeat 5px 26px;
+}
+
+.friendsLogo_5:hover {
+	background: url(../images/friendsLogoActive_5.png) no-repeat 5px 26px;
+	cursor: pointer;
+}
+
+.friendsLogo_6 {
+	background: url(../images/friendsLogo_6.png) no-repeat 0px 26px;
+}
+
+.friendsLogo_6:hover {
+	background: url(../images/friendsLogoActive_6.png) no-repeat 0px 26px;
+	cursor: pointer;
+}
+
+.friendsLogo_7 {
+	background: url(../images/friendsLogo_4.png) no-repeat 20px 25px;
+}
+
+.friendsLogo_7:hover {
+	background: url(../images/friendsLogoActive_4.png) no-repeat 20px 25px;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
 
 .siteMap {
 	width: 100%;
@@ -161,39 +439,125 @@ html,body {
 }
 
 .siteMapContainer {
-	width: 140px;
-	min-height: 200px;
-	background-color: blue;
-	margin: 0 15px 0 0;
+	width: 155px;
+	margin: 0 0 0 0;
 	float: left;
 }
+
+.siteMapHead {
+	font-size: 10px
+}
+
+.siteMapBorder {
+	border-right: 1px solid #d8dadb;
+}
+
+.siteMapContainer a {
+	color: rgb(93, 93, 93);
+}
+
+.siteMapContainer >ul {
+	padding: 0;
+	list-style: none;
+	color: rgb(93, 93, 93);
+	margin: 0 0 0 25px;
+} 
+
+.siteMapContainer ul>li {
+	margin: 0 0 15px 0;
+} 
+
+.siteMapContainer ul>li>ul {
+	padding: 0;
+} 
+
+.siteMapContainer li>ul>li {
+	list-style: none;
+	font-size: 11px;
+	margin: 10px 0 0 0;
+	display: none;
+}
+
+/* ------------------Далее работа нижнего меню сайта с помощью CSS -----------------------*/
+
+.siteMapContainer ul li:focus {
+	color: #cf3434;
+	outline: none;
+}
+
+.siteMapContainer ul li:active {
+	color: #cf3434;
+	outline: none;
+}
+
+.siteMapContainer .siteMapHead:hover {
+	cursor: pointer;
+	color: #cf3434
+}
+
+.siteMapContainer .siteMapHead:active + li>ul>li {
+	display: list-item;
+}
+
+.siteMapContainer .siteMapHead:focus + li>ul>li {
+	display: list-item;
+}
+
+.siteMapContainer ul>li>ul>li:hover {
+	color: #cf3434;
+	list-style: disc;
+	margin: 10px 0 0 10px;
+}
+
+.siteMapContainer a:hover {
+	color: #cf3434;
+	text-decoration: underline;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
 
 .footer {
 	width: 100%;
 	float: left;
-	margin: 10px 0 20px 0;
+	margin: 15px 0 10px 0;
 }
 
 .footerLogo {
 	width: 85px;
-	min-height: 50px;
-	background-color: red;
+	min-height: 52px;
 }
 
 .copyright {
 	width: 295px;
-	min-height: 80px;
-	background-color: green;
-	margin: 8px 0 0 0;
+	margin: 10px 0 0 0;
 	float: left;
+}
+
+.copyright p {
+	margin: 5px 0 0 0;
+	font-size: 12px;
+	color: rgb(133, 133, 133);
 }
 
 .footerContacts {
 	width: 335px;
-	min-height: 80px;
-	background-color: green;
 	margin: 8px 0 0 65px;
 	float: left;
+}
+
+.footerContactsText {
+	margin: 0px;
+	font-size: 12px;
+	color: rgb(140, 140, 140);
+}
+
+.footerPhone {
+	margin: 10px 25px 0 0;
+	font-size: 18px;
+	margin: 10px 20px 0 0;
+	float: left;
+	color: rgb(140, 140, 140);
 }
 
 .Empty {

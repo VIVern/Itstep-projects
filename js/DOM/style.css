@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.hide {
+	display: none;
+}
+
+.menu {
+	list-style: none;
+}
+.menu li {
+	padding-top: 15px;
+	float: left;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	background: grey;
+	margin-right: 20px;
+	border: 1px solid red;
+}
+
+.new {
+	position: absolute;
+	top: 70px;
+	left: 50px;
+}
+
+.blue {
+	color: blue;
+}
+
+.red {
+	color: red;
+}

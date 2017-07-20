@@ -1,6 +1,11 @@
+@import url(fonts.css);
+
+/*---------------------------- Общие стили и сбросы ----------------------------------------*/
+
 html,body {
 	margin: 0;
 	padding: 0;
+	font-family: "HelveticaNeue";
 }
 
 body {
@@ -23,6 +28,10 @@ h2 {
 	padding: 0 10px 0 10px;
 }
 
+/*---------------------------------------------------------------------------------------------*/
+
+/*-------------------------------- стили на header --------------------------------------------*/
+
 .header {
 	width: 100%;
 	padding: 10px 0 10px 0;
@@ -35,7 +44,7 @@ h2 {
 	float: left;
 }
 
-.header-nav {
+.headerNav {
 	width: 370px;
 	margin: 0 0 0 10px;
 	float: left;
@@ -43,7 +52,7 @@ h2 {
 
 .menuIcons {
 	width: 90px;
-	margin: 10px 70px 0 0;
+	margin: 10px 100px 0 0;
 	float: right;
 }
 
@@ -68,7 +77,7 @@ h2 {
 }
 
 .menuText ul {
-	margin: 0;
+	margin: 0 0 0 30px;
 	padding: 0;
 	list-style: none;
 	float: left;
@@ -84,22 +93,24 @@ h2 {
 
 .menuText a {
 	color: black;
+	font-size: 12px;
 }
 
 .menuText a:hover {
-	color: red;
+	color: #b84545;
 }
 
 .contacts {
 	width: 390px;
 	min-height: 65px;
 	float: right;
-	color: #b6b6b6;
-	font-size: 14px;
+	color: #ababab;
+	font-size: 12px;
 }
 
 .contactsEmail {
-	color: red;
+	color: #b84545;
+	font-size: 12px;
 	text-decoration: underline;
 }
 
@@ -109,7 +120,8 @@ h2 {
 
 .contactsPhone {
 	font-size: 18px;
-	color: red;
+	color: #cf3232;
+	font-family: "HelveticaNeuBold";;
 	float: left;
 }
 
@@ -117,6 +129,9 @@ h2 {
 	float:left;
 }
 
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------- Навигация по погрузчикам --------------------------------------------------*/
 .tech {
 	width: 100%;
 	min-height: 103px;
@@ -126,8 +141,8 @@ h2 {
 }
 
 .techType {
-	width: 95px;
-	margin: 5px 0 0 20px;
+	width: 101px;
+	margin: 5px 0 0 15px;
 	float: left;
 }
 
@@ -135,10 +150,15 @@ h2 {
 	width: 100%;
 	margin: 0;
 	text-align: center;
-    font-size: 11px;
+	color: #767777;
+    font-size: 12px;
     float: left;
 
 }
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------- 4 кнопки навигации ----------------------------------------------*/
 
 .navigation {
 	width: 100%;
@@ -154,7 +174,26 @@ h2 {
 	float: left;
 }
 
-/*-----------------------------------Работа изменения цвета фона кнопок и текста ---------------------------------*/
+.navigationButton a {
+	display: block;
+	width: 100%;
+	min-height: 61px;
+}
+
+.navigationButton p {
+	color: #474747;
+	font-size: 12px;
+	font-family: "HelveticaNeuBold";;
+	margin: 25px 0 0 15px;
+	float: left;
+}
+
+.navigationButton .finance {
+	margin: 18px 0 0 15px;
+	float: left;
+}
+
+/*------- Работа изменения цвета фона, кнопок и текста ----------*/
 
 .navigationButton:hover {
 	background: url(../images/buttonActive.png);
@@ -173,7 +212,9 @@ h2 {
 
 }
 
-/*-----------------------------------Работа изменения цвета иконок на кнопках ---------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*----Работа изменения цвета иконок на кнопках -------*/
 
 .watchIcon {
 	background: url(../images/watchLogo.png);
@@ -208,17 +249,11 @@ h2 {
 	background: url(../images/financeLogoActive.png);
 }
 
+/*------------------------------------------------------*/
+
 /*------------------------------------------------------------------------------------------------------------*/
 
-.navigationButton .finance {
-	margin: 15px 0 0 10px;
-	float: left;
-}
-
-.navigationButton p {
-	margin: 25px 0 0 10px;
-	float: left;
-}
+/*----------------------------------------------- Слайдер ----------------------------------------------------*/
 
 .slider{
 	width: 920px;
@@ -226,14 +261,16 @@ h2 {
 	background: url(../images/sliderBg.png);
 	min-height: 203px;
 	float: left;
+	position: relative;
 }
 
-.slide {
+.slide_1 {
 	width: 100%;
-	min-height: 203px;
-	background: url(../images/slide_1.png) no-repeat 0px 3px;
-	float: left;
+	position: absolute;
 }
+
+/*----------- slider parts - небольшие по( 10px ) колонки по бокам лайдера,
+ для правильной отрисовки тени.----------------------------------------*/
 
 .sliderParts {
 	width: 10px;
@@ -253,22 +290,27 @@ h2 {
 .sliderText{
 	width: 210px;
 	min-height: 60px;
-	margin: 72px 0 0 52px;
 	float: left;
+	position: absolute;
+	top: 72px;
+	left: 52px;
 }
 
 .sliderText p {
 	display: inline-block;
 	padding: 0 10px 0 5px;
 	margin: 5px 0 0 0;
-	color: white;
+	color: #ffffff;
+	font-size: 18px;
 	background: rgba(0,0,0,.4);
 }
 
 .sliderNav {
 	width: 65px;
 	min-height: 20px;
-	margin: 165px auto 0;
+	position: absolute;
+	top: 165px;
+	left: 420px;
 }
 
 .sliderNavButton {
@@ -285,6 +327,10 @@ h2 {
 	background-color: #c53939;
 	outline: none;
 }
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------- Левая колонка новостей --------------------------------------------*/
 
 .news {
 	width: 210px;
@@ -320,6 +366,10 @@ h2 {
 	text-decoration: underline;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------- Правая (большая) колонка для контента -----------------------------------------*/
+
 .mainContent {
 	width: 720px;
 	min-height: 300px;
@@ -346,6 +396,10 @@ h2 {
 	margin: 0 0 15px 0;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------- Бар с логотипа других фирм (партнеров) -----------------------------------*/
+
 .friends {
 	width: 100%;
 	min-height: 80px;
@@ -361,11 +415,17 @@ h2 {
 	float: left;
 }
 
+.friendsLogo a {
+	display: block;
+	width: 100%;
+	height: 80px;
+}
+
 .friendsLogo img {
 	margin: 25px 0 0 0;
 }
 
-/*------------------ Работа логотипов при наведении ----------------------------------*/
+/*--------- Работа логотипов при наведении ------------------*/
 
 .friendsLogo_1 {
 	background: url(../images/friendsLogo_1.png) no-repeat 0px 25px;
@@ -430,7 +490,11 @@ h2 {
 	cursor: pointer;
 }
 
-/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------- Нижнее меню сайта --------------------------------------------------------------*/
 
 .siteMap {
 	width: 100%;
@@ -478,7 +542,7 @@ h2 {
 	display: none;
 }
 
-/* ------------------Далее работа нижнего меню сайта с помощью CSS -----------------------*/
+/* ---------- Работа нижнего меню сайта ----------------*/
 
 .siteMapContainer ul li:focus {
 	color: #cf3434;
@@ -515,12 +579,16 @@ h2 {
 }
 
 
-/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------*/
 
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------ Стили на footer ----------------------------------------------------*/
 .footer {
 	width: 100%;
 	float: left;
 	margin: 15px 0 10px 0;
+	
 }
 
 .footerLogo {
@@ -567,6 +635,27 @@ h2 {
 	margin: 32px 0 0 15px;
 	float: right;
 }
+
+.buttonUp {
+	width: 100px;
+	height: 100px;
+	background: url(../images/buttonUp.png) no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+.buttonUp>a {
+	display: block;
+	width: 100%;
+	min-height: 100px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------Вспомогательный сброс левого margin -------*/
 
 .firstElement{
 	margin-left: 0px;

@@ -1,0 +1,419 @@
+@import url(fonts.css);
+
+/*------------------------------------------ Общие стили  (сбросы) -----------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	background: #fff;
+	color: #132445;
+	font-family: arial;
+	font-size: 13px;
+}
+
+/*----------------- скролл (эксперимент) -----------------*/
+
+ body::-webkit-scrollbar {
+ 	width: 5px;
+}
+
+ body::-webkit-scrollbar-thumb {
+ 	background-color: #565f81;	
+}
+
+ body::-webkit-scrollbar-track {
+ 	background-color: #dadfeb;
+}
+
+/*----------------------------------------------------------*/
+
+h1 {
+	width: 580px;
+	float: left;
+	font-size: 32px;
+}
+
+h2 {
+	margin: 20px 0 0 5px;
+	font-family: "arial bold";
+	font-size: 20px;
+}
+
+h3 {
+	margin: 15px 60px 0 0;
+	font-family: "arial bold";
+	float: right;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------- header ------------------------------------------------*/
+
+.header {
+	width: 100%;
+	background: url(../images/headerBg.png);
+	box-shadow: 0 3px 8px rgba(11,43,104,.75);
+	position: relative;
+	z-index: 99;
+	float: left;
+}
+
+.headerCenter {
+	width: 955px;
+	padding: 10px 5px 0 0;
+	margin: 0 auto;
+}
+
+.headerLogo {
+	width: 217px;
+	float: left;
+}
+
+.headerMenu {
+	float: right;
+}
+
+.headerMenu ul {
+	float: left;
+}
+
+.headerMenu>ul>li {
+	margin: 20px 0 0 20px;
+	text-align: center;
+	padding: 0 10px;
+	list-style: none;
+	float: left;	
+}
+
+.headerMenu>ul>li:first-child {
+	margin-left: 0px;
+}
+
+.headerMenu a {
+	display: block;
+	width: 100%;
+	color: #2f57a1;
+	font-family: "arial bold";
+	font-size: 14px;
+}
+
+.headerMenu li:hover {
+	background: url(../images/headerMenuButtonBg.png);
+	border-radius: 20px;
+	box-shadow: 0 2px 2px rgba(0,0,0, .75);
+	color: #000;
+	cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------- Slider -----------------------------------------------*/
+
+.slider {
+	width: 100%;
+	min-height: 500px;
+	background: url(../images/sliderBg.jpg);
+	border-bottom: 2px solid #fff;
+	float: left;
+}
+
+.sliderCenter {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slide {
+	width: 100%;
+	min-height: 500px;
+	background: url(../images/sliderMonitorCenter.png) no-repeat 210px 20px,
+				url(../images/sliderMonitorLeft.png) no-repeat 13px 54px,
+				url(../images/sliderMonitorRight.png) no-repeat 507px 54px;
+				
+}
+
+.sliderNav {
+	position: absolute;
+	top: 465px;
+	left: 440px;
+}
+
+.sliderNav li {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	list-style: none;
+	background: #fff;
+	float: left;
+	margin: 0 15px 0 0 ;
+	box-shadow: 0 2px 0 rgba(122,134,161,1);
+}
+
+.sliderNav li:focus {
+	box-shadow: 0 2px 0 rgba(255,255,255,1), 
+				inset 0 2px 0 rgba(24,32,50, 1);
+	background: #4e63aa;
+	outline: none;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------- Главный конетент -----------------------------*/
+
+.mainContent {
+	width: 100%;
+	background: #dadfeb;
+	padding: 0 0 50px 0;
+	float: left;
+	border-bottom: solid 2px #fff;
+}
+
+.mainContentCenter {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*------------- голова главного контейнера ---------*/
+
+.headPart {
+	width: 100%;
+	min-height: 125px;
+	padding: 10px 0 0 0;
+	border-bottom: 2px solid #fff;
+    box-shadow: 0px 30px 20px -20px rgba(203, 211, 232, 1);
+    position: relative;
+    z-index: 99;
+    float: left;	
+}
+
+.headPartButton {
+	width: 341px;
+	height: 94px;
+	background: url(../images/headPartButtonBg.png);
+	border: none;
+	outline: none;
+	float: right;
+	border-radius: 15px;
+	font-size: 22px;
+	padding: 0 100px 0 100px;
+	white-space: pre-line;
+	text-align: left;
+	color: #FFF;
+}
+
+.headPartButton:hover {
+	cursor: pointer;
+}
+
+/*------------------------ 4 блока предложений ----------*/
+
+.offerPart {
+	width: 100%;
+	float: left;		
+}
+
+.offerContainers {
+	width: 185px;
+	min-height: 300px;
+	background: #fff;
+	float: left;
+	margin: 35px 28px 0 0;
+	padding: 18px 17px 15px;
+	box-shadow: 0 0 5px rgba(80,95,165, .78);
+}
+
+.offerContainers:last-child {
+	margin-right: 0px;
+}
+
+.offerContainers img {
+	margin:0 0 0 2px;
+}
+
+.offerContainers p {
+	margin: 20px 0 0 5px;
+	color: #545668;
+}
+
+.offerButton {
+	width: 110px;
+	min-height: 21px;
+	margin: 15px 0 0 0;
+	background: url(../images/offerButtonBg.png);
+	border: 1px solid rgba(198,204,220,1);
+	border-radius: 30px;
+	box-shadow: 0 2px 2px rgba(60,71,91, .75);
+	text-align: center;
+}
+
+.offerButton a {
+	display: block;
+	width: 100%;
+	margin: 3px 0 0 0;
+	min-height: 18px;
+	color: #2945c0;
+}
+
+/*----------------------- подвальная часть -------*/
+
+.footPart {
+	width: 960px;
+	margin: 0 auto;
+	float: left;
+}
+
+.leftPart {
+	width: 450px;
+	margin: 0 45px 0 0;
+	float: left;
+}
+
+.leftPartContainer {
+	width: 200px;
+	margin: 25px 50px 0 0;
+	float: left;
+}
+
+.leftPartContainer:nth-child(even) {
+	margin-right: 0px; 
+}
+
+.leftPartContainer img {
+	float: left;
+}
+
+.leftPartContainer p {
+	float: left;
+	margin: 5px 0 0 0;
+}
+
+.rightPart {
+	width: 465px;
+	margin: 25px 0 0 0;
+	float: right;
+}
+
+.rightPart h3 {
+	float: none;
+	margin: 0 0 10px 0;
+}
+
+.rightPart p {
+	margin: 0 0 10px 0;
+	line-height: 20px;
+}
+
+.rightPart a {
+	text-decoration: underline;
+	color: #2945c0;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------- Footer ---------------------------------------------------*/
+
+
+.footer {
+	width: 100%;
+	padding: 0 0 35px 0;
+	float: left;
+	background: #565f81;
+}
+
+.footerCenter {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.footerMenu {
+	float: left;
+	margin: 25px 0 0 0;
+}
+
+.footerMenu li {
+	float: left;
+	list-style: none;
+	border-right: 2px solid #dadfeb;
+	padding: 0 11px 0 0;
+	margin: 0 0 0 12px;
+}
+
+.footerMenu li>a {
+	color: #dadfeb;
+	text-decoration: none;
+}
+
+.footerMenu li:first-child {
+	margin-left: 0px;
+}
+
+.footerMenu li:last-child {
+	border-right: none;
+}
+
+.footerContact {
+	float: right;
+	margin: 25px 0 0 0;
+}
+
+.footerContact p {
+	float: left;
+	margin: 10px 20px 0 0;
+	color: #dadfeb;
+}
+
+.social {
+	width: 34px;
+	height: 35px;
+	border-radius: 10px;
+	float: right;
+	margin: 0 17px 0 0;
+}
+
+.footerContact div:first-child {
+	margin-right: 0px;
+}
+
+.copyright {
+	float: left;
+	margin: 10px 0 0 0;
+
+}
+
+.copyright li {
+	display: inline-block;
+	float: left;
+	list-style: none;
+	border-right: solid 2px #9fa8bd;
+	color: #9fa8bd;
+	margin: 0 5px 0 0;
+	padding: 0 3px 0 0;
+}
+
+.copyright li:last-child {
+	border-right: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.footerCenter>p  {
+	margin: 15px 0 0 0;
+	color: #9fa8bd;
+	clear: both;
+	float: left;
+}
+
+.footerCenter>p>a {
+	text-decoration: underline;
+	color: #dadfeb;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
